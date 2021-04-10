@@ -8,16 +8,18 @@
 import UIKit
 
 class collegeViewController: UIViewController {
-
+    
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    
     var arrCollege = [College]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         arrCollege = dataBaseHelper.shareInstance.getAllCollegeData()
         tableSetup()
+        searchBar.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,6 +31,7 @@ class collegeViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
+        tableView.separatorColor = .clear
         tableView.register(UINib(nibName: "clgTableViewCell", bundle: nil), forCellReuseIdentifier: "clgTableViewCell")
     }
     
@@ -37,7 +40,6 @@ class collegeViewController: UIViewController {
         let detail:collegeFormViewController = storyboard.instantiateViewController(withIdentifier: "collegeFormViewController") as! collegeFormViewController
         self.navigationController?.pushViewController(detail, animated: true)
     }
-    
 }
 
 extension collegeViewController:UITableViewDelegate,UITableViewDataSource{
@@ -76,6 +78,24 @@ extension collegeViewController:UITableViewDelegate,UITableViewDataSource{
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
+}
+
+extension collegeViewController:UISearchBarDelegate{
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+        if searchText.isEmpty{
+            var tmp = [College]()
+            tmp = arrCollege.filter({($0.name?.contains(searchText.lowercased().uppercased()))!})
+            arrCollege = tmp
+            arrCollege = dataBaseHelper.shareInstance.getAllCollegeData()
+        }else{
+            var tmp = [College]()
+            tmp = arrCollege.filter({($0.name?.contains(searchText))!})
+            arrCollege = tmp
+        }
+        tableView.reloadData()
+    }
     
 }
+

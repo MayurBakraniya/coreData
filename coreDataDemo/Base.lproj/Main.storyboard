@@ -17,17 +17,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MMq-Mi-6fS">
-                                <rect key="frame" x="5" y="140" width="404" height="722"/>
+                                <rect key="frame" x="5" y="196" width="404" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <searchBar contentMode="redraw" placeholder="Search!.." translatesAutoresizingMaskIntoConstraints="NO" id="q9Z-58-5lP">
+                                <rect key="frame" x="0.0" y="140" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MMq-Mi-6fS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="KoR-kx-deC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MMq-Mi-6fS" secondAttribute="trailing" constant="5" id="UY1-8M-Bc8"/>
-                            <constraint firstItem="MMq-Mi-6fS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XNA-fb-T5o"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MMq-Mi-6fS" secondAttribute="bottom" id="a7m-mV-z54"/>
+                            <constraint firstItem="MMq-Mi-6fS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2g0-Hw-YXd"/>
+                            <constraint firstItem="q9Z-58-5lP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6gu-T1-V9P"/>
+                            <constraint firstItem="q9Z-58-5lP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8wV-ou-WE6"/>
+                            <constraint firstItem="MMq-Mi-6fS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="NtD-HM-m4J"/>
+                            <constraint firstItem="q9Z-58-5lP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Vf9-Kt-EzJ"/>
+                            <constraint firstItem="MMq-Mi-6fS" firstAttribute="top" secondItem="q9Z-58-5lP" secondAttribute="bottom" id="a6h-KM-jYh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MMq-Mi-6fS" secondAttribute="trailing" constant="5" id="cIM-X4-1gA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="College " id="Rut-EE-dko">
@@ -38,6 +45,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="q9Z-58-5lP" id="waI-lY-1os"/>
                         <outlet property="tableView" destination="MMq-Mi-6fS" id="Jic-PP-BaQ"/>
                         <segue destination="wQ5-Ux-jHa" kind="push" id="WZa-QN-Nhm"/>
                         <segue destination="6Xu-p4-t3Z" kind="push" id="4wd-IC-aEk"/>
@@ -45,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="710" y="88"/>
+            <point key="canvasLocation" x="708.69565217391312" y="87.723214285714278"/>
         </scene>
         <!--College Form View Controller-->
         <scene sceneID="xzb-7P-Mxk">
