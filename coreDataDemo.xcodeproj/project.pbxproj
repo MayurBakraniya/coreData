@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04289CB12621AF1C00D86D4E /* studentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04289CAF2621AF1C00D86D4E /* studentTableViewCell.swift */; };
+		04289CB22621AF1C00D86D4E /* studentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04289CB02621AF1C00D86D4E /* studentTableViewCell.xib */; };
 		04AEC6BE262177A7001CD4BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEC6BD262177A7001CD4BE /* AppDelegate.swift */; };
 		04AEC6C0262177A7001CD4BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEC6BF262177A7001CD4BE /* SceneDelegate.swift */; };
 		04AEC6C2262177A7001CD4BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEC6C1262177A7001CD4BE /* ViewController.swift */; };
@@ -14,9 +16,19 @@
 		04AEC6C8262177A7001CD4BE /* coreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04AEC6C6262177A7001CD4BE /* coreDataDemo.xcdatamodeld */; };
 		04AEC6CA262177A9001CD4BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AEC6C9262177A9001CD4BE /* Assets.xcassets */; };
 		04AEC6CD262177A9001CD4BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AEC6CB262177A9001CD4BE /* LaunchScreen.storyboard */; };
+		04AEC6D7262177C2001CD4BE /* dataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEC6D6262177C2001CD4BE /* dataBaseHelper.swift */; };
+		04AEC6DC262177D2001CD4BE /* collegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEC6DA262177D2001CD4BE /* collegeViewController.swift */; };
+		04AEC6DD262177D2001CD4BE /* collegeFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEC6DB262177D2001CD4BE /* collegeFormViewController.swift */; };
+		04AEC6E2262177E5001CD4BE /* clgTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AEC6E0262177E5001CD4BE /* clgTableViewCell.xib */; };
+		04AEC6E3262177E5001CD4BE /* clgTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEC6E1262177E5001CD4BE /* clgTableViewCell.swift */; };
+		04AEC6E92621803F001CD4BE /* collegeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEC6E82621803F001CD4BE /* collegeDetailViewController.swift */; };
+		04AEC6EE2621A3AB001CD4BE /* studentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEC6ED2621A3AB001CD4BE /* studentListViewController.swift */; };
+		04AEC6F22621A3EC001CD4BE /* studentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEC6F12621A3EC001CD4BE /* studentFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04289CAF2621AF1C00D86D4E /* studentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentTableViewCell.swift; sourceTree = "<group>"; };
+		04289CB02621AF1C00D86D4E /* studentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = studentTableViewCell.xib; sourceTree = "<group>"; };
 		04AEC6BA262177A7001CD4BE /* coreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AEC6BD262177A7001CD4BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AEC6BF262177A7001CD4BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +38,14 @@
 		04AEC6C9262177A9001CD4BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AEC6CC262177A9001CD4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04AEC6CE262177A9001CD4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04AEC6D6262177C2001CD4BE /* dataBaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataBaseHelper.swift; sourceTree = "<group>"; };
+		04AEC6DA262177D2001CD4BE /* collegeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collegeViewController.swift; sourceTree = "<group>"; };
+		04AEC6DB262177D2001CD4BE /* collegeFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collegeFormViewController.swift; sourceTree = "<group>"; };
+		04AEC6E0262177E5001CD4BE /* clgTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = clgTableViewCell.xib; sourceTree = "<group>"; };
+		04AEC6E1262177E5001CD4BE /* clgTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clgTableViewCell.swift; sourceTree = "<group>"; };
+		04AEC6E82621803F001CD4BE /* collegeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collegeDetailViewController.swift; sourceTree = "<group>"; };
+		04AEC6ED2621A3AB001CD4BE /* studentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentListViewController.swift; sourceTree = "<group>"; };
+		04AEC6F12621A3EC001CD4BE /* studentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04289CAE2621AEFF00D86D4E /* studentListTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				04289CAF2621AF1C00D86D4E /* studentTableViewCell.swift */,
+				04289CB02621AF1C00D86D4E /* studentTableViewCell.xib */,
+			);
+			path = studentListTableCell;
+			sourceTree = "<group>";
+		};
 		04AEC6B1262177A7001CD4BE = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +87,8 @@
 		04AEC6BC262177A7001CD4BE /* coreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04AEC6D5262177B9001CD4BE /* DatabaseHelper */,
+				04AEC6D9262177C5001CD4BE /* Controller */,
 				04AEC6BD262177A7001CD4BE /* AppDelegate.swift */,
 				04AEC6BF262177A7001CD4BE /* SceneDelegate.swift */,
 				04AEC6C1262177A7001CD4BE /* ViewController.swift */,
@@ -68,6 +99,53 @@
 				04AEC6C6262177A7001CD4BE /* coreDataDemo.xcdatamodeld */,
 			);
 			path = coreDataDemo;
+			sourceTree = "<group>";
+		};
+		04AEC6D5262177B9001CD4BE /* DatabaseHelper */ = {
+			isa = PBXGroup;
+			children = (
+				04AEC6D6262177C2001CD4BE /* dataBaseHelper.swift */,
+			);
+			path = DatabaseHelper;
+			sourceTree = "<group>";
+		};
+		04AEC6D9262177C5001CD4BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04AEC6EC2621A399001CD4BE /* Student */,
+				04AEC6EB2621A391001CD4BE /* College */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04AEC6DF262177D7001CD4BE /* collegeListTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				04AEC6E1262177E5001CD4BE /* clgTableViewCell.swift */,
+				04AEC6E0262177E5001CD4BE /* clgTableViewCell.xib */,
+			);
+			path = collegeListTableCell;
+			sourceTree = "<group>";
+		};
+		04AEC6EB2621A391001CD4BE /* College */ = {
+			isa = PBXGroup;
+			children = (
+				04AEC6DF262177D7001CD4BE /* collegeListTableCell */,
+				04AEC6DB262177D2001CD4BE /* collegeFormViewController.swift */,
+				04AEC6DA262177D2001CD4BE /* collegeViewController.swift */,
+				04AEC6E82621803F001CD4BE /* collegeDetailViewController.swift */,
+			);
+			path = College;
+			sourceTree = "<group>";
+		};
+		04AEC6EC2621A399001CD4BE /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				04289CAE2621AEFF00D86D4E /* studentListTableCell */,
+				04AEC6ED2621A3AB001CD4BE /* studentListViewController.swift */,
+				04AEC6F12621A3EC001CD4BE /* studentFormViewController.swift */,
+			);
+			path = Student;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +207,8 @@
 			files = (
 				04AEC6CD262177A9001CD4BE /* LaunchScreen.storyboard in Resources */,
 				04AEC6CA262177A9001CD4BE /* Assets.xcassets in Resources */,
+				04289CB22621AF1C00D86D4E /* studentTableViewCell.xib in Resources */,
+				04AEC6E2262177E5001CD4BE /* clgTableViewCell.xib in Resources */,
 				04AEC6C5262177A7001CD4BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,8 +222,16 @@
 			files = (
 				04AEC6C2262177A7001CD4BE /* ViewController.swift in Sources */,
 				04AEC6C8262177A7001CD4BE /* coreDataDemo.xcdatamodeld in Sources */,
+				04AEC6E3262177E5001CD4BE /* clgTableViewCell.swift in Sources */,
+				04289CB12621AF1C00D86D4E /* studentTableViewCell.swift in Sources */,
+				04AEC6DD262177D2001CD4BE /* collegeFormViewController.swift in Sources */,
 				04AEC6BE262177A7001CD4BE /* AppDelegate.swift in Sources */,
+				04AEC6E92621803F001CD4BE /* collegeDetailViewController.swift in Sources */,
 				04AEC6C0262177A7001CD4BE /* SceneDelegate.swift in Sources */,
+				04AEC6DC262177D2001CD4BE /* collegeViewController.swift in Sources */,
+				04AEC6EE2621A3AB001CD4BE /* studentListViewController.swift in Sources */,
+				04AEC6D7262177C2001CD4BE /* dataBaseHelper.swift in Sources */,
+				04AEC6F22621A3EC001CD4BE /* studentFormViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

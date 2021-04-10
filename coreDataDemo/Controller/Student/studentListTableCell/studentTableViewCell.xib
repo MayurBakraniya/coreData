@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="studentTableViewCell" rowHeight="43" id="KGk-i7-Jjw" customClass="studentTableViewCell" customModule="coreDataDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="43"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="289" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRz-OG-guG">
+                        <rect key="frame" x="5" y="5" width="279" height="33"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANJ-XG-NPg">
+                                <rect key="frame" x="20" y="10" width="42" height="13"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iav-FB-dP2">
+                                <rect key="frame" x="72" y="10" width="42" height="13"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="Iav-FB-dP2" firstAttribute="leading" secondItem="ANJ-XG-NPg" secondAttribute="trailing" constant="10" id="BMx-5V-NUg"/>
+                            <constraint firstItem="ANJ-XG-NPg" firstAttribute="top" secondItem="qRz-OG-guG" secondAttribute="top" constant="10" id="Hvs-M8-Zte"/>
+                            <constraint firstItem="Iav-FB-dP2" firstAttribute="top" secondItem="qRz-OG-guG" secondAttribute="top" constant="10" id="NLl-xb-l7R"/>
+                            <constraint firstAttribute="bottom" secondItem="ANJ-XG-NPg" secondAttribute="bottom" constant="10" id="Wyu-vI-9bx"/>
+                            <constraint firstAttribute="bottom" secondItem="Iav-FB-dP2" secondAttribute="bottom" constant="10" id="dOi-zM-n3Y"/>
+                            <constraint firstItem="ANJ-XG-NPg" firstAttribute="leading" secondItem="qRz-OG-guG" secondAttribute="leading" constant="20" id="rwd-Bv-5YS"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qRz-OG-guG" secondAttribute="trailing" constant="5" id="5Ly-99-Gwf"/>
+                    <constraint firstItem="qRz-OG-guG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="dVk-wI-tvK"/>
+                    <constraint firstItem="qRz-OG-guG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ly5-X6-hD2"/>
+                    <constraint firstAttribute="bottom" secondItem="qRz-OG-guG" secondAttribute="bottom" constant="5" id="mnx-XL-NxH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="studContactLbl" destination="Iav-FB-dP2" id="EPJ-sv-gf9"/>
+                <outlet property="studNameLbl" destination="ANJ-XG-NPg" id="P7D-9D-2cK"/>
+            </connections>
+            <point key="canvasLocation" x="-25.362318840579711" y="114.84375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
